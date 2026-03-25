@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "characters": [
+    {
+      "id": "player_01_placeholder",
+      "stats": {
+        "STR": 13,
+        "CON": 10,
+        "AGI": 14,
+        "INT": 12,
+        "LCK": 16
+      }
+    },
+    {
+      "id": "player_02_placeholder",
+      "stats": {
+        "STR": 9,
+        "CON": 16,
+        "AGI": 11,
+        "INT": 10,
+        "LCK": 18
+      }
+    },
+    {
+      "id": "player_03_placeholder",
+      "stats": {
+        "STR": 15,
+        "CON": 12,
+        "AGI": 10,
+        "INT": 11,
+        "LCK": 12
+      }
+    },
+    {
+      "id": "player_04_placeholder",
+      "stats": {
+        "STR": 12,
+        "CON": 9,
+        "AGI": 16,
+        "INT": 13,
+        "LCK": 14
+      }
+    }
+  ]
+}
+
