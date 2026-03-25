@@ -1,16 +1,20 @@
 # 🌑 UMBERHOLD MEMORY LOG
-**Current Phase:** Phase 1: Foundation (The Skeleton)
-**Date:** Day 1
+**Current Phase:** Phase 2: The Tactical Grid (Construction)
+**Date:** Day 1 - Wrap Up
 
 ## ✅ COMPLETED
 - Godot 4 Project Initialized (Compatibility Mode)
-- Cursor Environment Linked
 - .cursorrules (Master Spec) established
+- Project Structure Created: `/src`, `/data`, `/assets`, `/scenes`
+- `JSONDataManager.gd` established as Autoload Singleton
+- Verified Data Flow: Game reads `player_stats.json` successfully (STR 13.0 / LCK 16.0)
+- GitHub Repository Initialized and Pushed to Cloud
 
 ## 🎯 CURRENT GOALS
-- Create JSON Data Manager (Singleton)
-- Generate initial player_stats.json
-- Establish core folder structure (/src, /data, /assets)
+- Generate a 20x20 Tactical Grid (Visual representation)
+- Implement Tile-based coordinate system
+- Prepare for Unit placement (Phase 3)
 
 ## 🐛 KNOWN ISSUES
-- None (Initial Setup)
+- Fixed: Godot strict typing warnings in JSONDataManager.
+- Fixed: Case-sensitivity mismatch between code and JSON keys.
