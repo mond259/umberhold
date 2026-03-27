@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://eakh4jxda15j"]
+
+[ext_resource type="Script" uid="uid://v38k4ip77h2n" path="res://src/WorldGenerator.gd" id="1_fqhjb"]
+[ext_resource type="Script" uid="uid://bsg6l0pmdj5t6" path="res://src/PlayerController.gd" id="2_7u2t8"]
+
+[sub_resource type="Environment" id="Environment_fqhjb"]
+background_mode = 2
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4xxmu"]
+
+[node name="MainWorld" type="Node3D" unique_id=787793175]
+script = ExtResource("1_fqhjb")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1754427147]
+transform = Transform3D(0.70710677, -0.49999997, 0.49999997, 0, 0.70710677, 0.70710677, -0.70710677, -0.49999997, 0.49999997, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1919581550]
+environment = SubResource("Environment_fqhjb")
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1799098002]
+script = ExtResource("2_7u2t8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=220918814]
+shape = SubResource("CapsuleShape3D_4xxmu")
+
+[node name="Head" type="Node3D" parent="Player" unique_id=1186907727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Head" unique_id=1015923997]

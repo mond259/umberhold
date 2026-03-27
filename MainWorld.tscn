@@ -1,6 +1,30 @@
 [gd_scene format=3 uid="uid://eakh4jxda15j"]
 
-[ext_resource type="Script" uid="uid://714gag3bf8d5" path="res://main_world.gd" id="1_fqhjb"]
+[ext_resource type="Script" uid="uid://v38k4ip77h2n" path="res://src/WorldGenerator.gd" id="1_fqhjb"]
 
-[node name="MainWorld" type="Node2D" unique_id=952555835]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fqhjb"]
+
+[sub_resource type="Sky" id="Sky_fqhjb"]
+sky_material = SubResource("ProceduralSkyMaterial_fqhjb")
+
+[sub_resource type="Environment" id="Environment_7u2t8"]
+background_mode = 2
+sky = SubResource("Sky_fqhjb")
+
+[node name="MainWorld" type="Node3D" unique_id=787793175]
 script = ExtResource("1_fqhjb")
+grid_size = null
+tile_size = null
+generate_on_ready = null
+collision_thickness = null
+spawn_player_on_ready = null
+player_spawn_position = null
+player_camera_height = null
+invert_letter_axis = null
+invert_number_axis = null
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1754427147]
+transform = Transform3D(0.70710677, -0.49999997, 0.49999997, 0, 0.70710677, 0.70710677, -0.70710677, -0.49999997, 0.49999997, 0, 2, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1919581550]
+environment = SubResource("Environment_7u2t8")

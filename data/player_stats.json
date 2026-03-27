@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 3,
   "characters": [
     {
       "id": "player_01_placeholder",
@@ -8,7 +8,8 @@
         "CON": 10,
         "AGI": 14,
         "INT": 12,
-        "LCK": 16
+        "WIS": 10,
+        "PRE": 10
       }
     },
     {
@@ -18,7 +19,8 @@
         "CON": 16,
         "AGI": 11,
         "INT": 10,
-        "LCK": 18
+        "WIS": 10,
+        "PRE": 10
       }
     },
     {
@@ -28,7 +30,8 @@
         "CON": 12,
         "AGI": 10,
         "INT": 11,
-        "LCK": 12
+        "WIS": 10,
+        "PRE": 10
       }
     },
     {
@@ -38,7 +41,8 @@
         "CON": 9,
         "AGI": 16,
         "INT": 13,
-        "LCK": 14
+        "WIS": 10,
+        "PRE": 10
       }
     }
   ]
